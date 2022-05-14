@@ -18,6 +18,10 @@ const plusMonthElement = document.getElementById('plusMonth');
 const minusYearElement = document.getElementById('minusYear');
 const plusYearElement = document.getElementById('plusYear');
 
+minusMonthElement.addEventListener('click', () => {
+  minusMonthElement.style.color = 'red';
+});
+
 const today = new Date ();
 let monthDifference = 0;
 let yearDifference = 0;
